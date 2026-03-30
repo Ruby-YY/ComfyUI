@@ -48,6 +48,8 @@ if errorlevel 1 (
 
 echo.
 echo Starting ComfyUI in a new window...
+set HTTP_PROXY=http://127.0.0.1:7890
+set HTTPS_PROXY=http://127.0.0.1:7890
 start "ComfyUI" /D "%~dp0" cmd /k "call venv\Scripts\activate.bat && python main.py --enable-manager"
 
 timeout /t 3 > nul
