@@ -1,2 +1,0 @@
-checkpoints: 
-    sd_xl_vae.safetensors
